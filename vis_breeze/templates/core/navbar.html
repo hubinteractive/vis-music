@@ -1,0 +1,183 @@
+{% load static %}
+
+<!-- navbar -->
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button> -->
+
+<!-- Modal -->
+<div class="footer_contact">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Contact Us</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+
+                <style>
+                    .footer_contact input,
+                    .footer_contact textarea {
+                        width: 100%;
+                        padding: 12px;
+                        margin-bottom: 10px;
+                        font-size: 14px;
+                        font-weight: 500;
+                        border: 0;
+                        border-radius: 0;
+                        border-bottom: 1px solid rgba(71, 102, 125, .25);
+                        color: var(--ai-peacoat) !important;
+                        background: transparent !important;
+                        -webkit-box-sizing: border-box;
+                        box-sizing: border-box;
+                        -webkit-transition: all 0.15s ease-in-out;
+                        transition: all 0.15s ease-in-out;
+                    }
+                </style>
+                <div class="modal-body">
+                    <div class="form_width_576_992">
+                        <div>
+                            <!-- <h3 class="color-mode-peacoat" style="color:#e1dcd9;font-weight: 600;">Contact us for a free case evaluation</h3> -->
+                            <!-- form -->
+                            <form action=" " class="footer_contact mt-5">
+                                <div class="form-floating mb-3 ">
+                                    <input type="name" class="form-control " id="floatingInput " placeholder="name@example.com ">
+                                    <label for="floatingInput ">YOUR NAME* </label>
+                                </div>
+
+                                <div class="form-floating mb-3 ">
+                                    <input type="email" class="form-control " id="floatingInput " placeholder="name@example.com ">
+                                    <label for="floatingInput ">YOUR EMAIL*</label>
+                                </div>
+
+                                <div class="form-floating mb-4">
+                                    <input type="tel" class="form-control " id="floatingInput " placeholder="name@example.com ">
+                                    <label for="floatingInput ">PHONE NUMBER </label>
+                                </div>
+
+                                <div class="form-floating" style="border:solid 1px rgba(255, 255, 255, .52)">
+                                    <textarea class="form-control " placeholder="Leave a comment here " id="floatingTextarea2 " style="height: 100px; border-bottom: 0; "></textarea>
+                                    <label for="floatingTextarea2 ">PLEASE DESCRIBE YOUR CASE</label>
+                                </div>
+                                <div class="">
+                                    <button class="hRgTcm mt-4 h-65k" style="background-color: #e1dcd9;
+                                    color: black;
+                                    border: solid 1px var(--ai-burnished-brown);
+                                    min-width: 200px;
+                                    border-radius: 0;
+                                    width: 100%;
+                                    z-index: 1;
+                                    font-weight: 600;
+                                    font-size: .915rem;height: 50px;">SEND MESSAGE</button>
+                                </div>
+                            </form>
+
+                            <!-- min-width:0 and max-width:992px -->
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<nav id="navNavbar" class="navbar bg-body-tertiary fixed-top" style="background-color: transparent;">
+    <div class="container-fluid d-flex justify-content-between position-relative navbar_768">
+
+        <div class="d-flex justify-content-center logo_fc logo_abs">
+
+            <div class="me-3 d-none_max_576">
+                <a href="/" style="font-weight: 800;font-size: 1.35rem;letter-spacing: -1px;color:white;text-decoration: none;">
+                    Vis-Music
+                </a>
+            </div>
+
+            <div class="brand_divider d-none_max_992"></div>
+
+            <div class="ms-3 d-none_max_992">
+
+                <h6 class="mt-2">
+                    28-30.06.24
+                </h6>
+                <!-- <h6>
+                    Vis Island
+                </h6> -->
+
+            </div>
+        </div>
+        <div class="order_1">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class=" order_2">
+            <ul class="mb-2 mb-lg-0 d-flex w-100 ls-none align-items-center px-5">
+
+                <li class="nav-item me-4 d-none_max_768">
+                    <a class="nav-link font_white" data-bs-toggle="modal" data-bs-target="#exampleModal" style="cursor: pointer;">Contact</a>
+                </li>
+                <li class="nav-item">
+
+                    <div class="ticket_button"> <a class="txt_decoration" href="https://www.entrio.hr/en/event/music-breeze-vis-18574"> Tickets </a> </div>
+                </li>
+
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+<!--  -->
+<!-- offcanvas-body -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'vis_breeze:about_us' %}">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'vis_breeze:contact_us' %}">Contact</a>
+
+        </ul>
+        <div style="margin-top: 10rem;">
+            <h3>Social Media</h3>
+        </div>
+    </div>
+</div>
+<style>
+    #navNavbar {
+        transition: top 0.6s;
+    }
+    
+    .bg-body-tertiary {
+        --bs-bg-opacity: 0;
+        background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;
+    }
+</style>
+<script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navNavbar").style.top = "0";
+        } else {
+            document.getElementById("navNavbar").style.top = "-150px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+</script>

@@ -1,0 +1,82 @@
+ {% load static %}
+
+<div class="container-flud p-0 banner_vis_wd_ht banner_bg">
+    <!-- <img class="img-fluid" style="" src="{% static 'img/vis-banner_Edit_1.jpg' %}" alt=""> -->
+    <div class="banner_text padd_banner_caption">
+
+
+
+        <div class="tp-mask-wrap" style="position: absolute; display: block; overflow: visible;">
+            <div class="banner-caption">Tickets on sale </div>
+            <h2 class="mb-3" style="font-weight: 400 ;">
+                4-Day, 2-Day & 1-Day Tickets
+            </h2>
+            <h3 class="mb-5" style="font-weight: 400 ;">
+                4-Day GA Tickets now on waitlist. Get your 1-Day
+            </h3>
+
+            <div class="ticket_button"> <a class="txt_decoration" href="https://www.entrio.hr/en/event/music-breeze-vis-18574" data-wpel-link="internal">Buy Ticket</a> </div>
+        </div>
+        <style>
+            .y_divider {
+                background-color: #4a677c;
+                width: 1px;
+                margin: 0 40px 0 10px;
+                height: 150px;
+            }
+            
+            .bran_logo_container {
+                left: 5%;
+                bottom: -10%;
+                width: 50%;
+                height: 200px;
+                background-color: #e2b365;
+            }
+            
+            .brand_logo_tzv {
+                width: auto;
+                height: 125px;
+            }
+            
+            .brand_logo_3gonga {
+                font-size: 2.5rem
+            }
+            
+            @media (max-width:768px) {
+                .brand_logo_tzv {
+                    width: auto;
+                    height: 65px;
+                }
+                .brand_logo_3gonga {
+                    font-size: 1.2rem;
+                    margin-top: 1rem;
+                }
+                .bran_logo_container {
+                    left: 5%;
+                    bottom: -11.5%;
+                    width: 90%;
+                    height: 100px;
+                    background-color: #e2b365;
+                }
+                .y_divider {
+                    width: 1px;
+                    margin: 0 20px 0 10px;
+                    height: 75px;
+                }
+            }
+        </style>
+        <div class="position-absolute d-flex align-items-center px-5 justify-content-center bran_logo_container">
+            <a href="https://www.tz-vis.hr/" target="_blank">
+                <img class="brand_logo_tzv" src="{% static 'img/tz-vis-logotip-mobile.png' %}" alt="">
+            </a>
+            <div class="y_divider"></div>
+
+            <div class="brand_logo_tzv mt-4">
+                <a href="https://www.facebook.com/3gonga/" target="_blank" class="brand_logo_3gonga" style="color: white;font-weight: 500;text-decoration: none;">
+                    3Gonga Logo
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div>
