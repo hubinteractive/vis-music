@@ -1075,3 +1075,258 @@
         color: white;
         font-size: 20px;
     }
+    /* #artist page */
+    
+    #lana h2 {
+        color: #e2b365;
+        font-weight: 600;
+    }
+    
+    #lana p {
+        color: white;
+        font-weight: 400;
+    }
+    
+    #lana a {
+        color: #e2b365;
+        text-decoration: none;
+    }
+    
+    @media (max-width: 768px) {
+        #lana .h2,
+        #lana h2 {
+            font-size: 1.75rem;
+        }
+        #lana .h5,
+        #lana h5 {
+            font-size: 1.075rem;
+        }
+    }
+    
+    .bg_artist {
+        background-color: #1d2932;
+        background-color: #14171d;
+    }
+    
+    .font_light {
+        color: whitesmoke
+    }
+    
+    .bg_caption {
+        background-color: rgba(15, 21, 25, .90);
+    }
+    
+    .artist_py {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    
+    .artist_img {
+        width: 100%;
+        height: 500px;
+    }
+    
+    .artist_lb {
+        max-width: 1200px;
+        height: 550px;
+        overflow: hidden;
+        padding: 15px 0;
+        width: 98%;
+        margin: 0 auto;
+        position: relative;
+        background-image: url(../../static/img/lana_janjanin_banner_1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .artist_2b {
+        max-width: 1200px;
+        height: 550px;
+        overflow: hidden;
+        padding: 15px 0;
+        width: 98%;
+        margin: 0 auto;
+        position: relative;
+        background-image: url(../../static/img/ram16.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .artist_3b {
+        max-width: 1200px;
+        height: 550px;
+        overflow: hidden;
+        padding: 15px 0;
+        width: 98%;
+        margin: 0 auto;
+        position: relative;
+        background-image: url(../../static/img/zasto-kafka.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .artist_4b {
+        max-width: 1200px;
+        height: 550px;
+        overflow: hidden;
+        padding: 15px 0;
+        width: 98%;
+        margin: 0 auto;
+        position: relative;
+        background-image: url(../../static/img/VlatkoE1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .artist_5b {
+        max-width: 1200px;
+        height: 550px;
+        overflow: hidden;
+        padding: 15px 0;
+        width: 98%;
+        margin: 0 auto;
+        position: relative;
+        background-image: url(../../static/img/diletun.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .artist_w1 {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-bottom: 5rem;
+    }
+    
+    .artist_caption {
+        position: absolute;
+        bottom: 0px;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 0;
+        left: 0px;
+        padding: 20px 20px 20px;
+        color: #222;
+        right: 0px;
+        color: #ccc;
+    }
+    
+    .date_fs {
+        font-size: 32px;
+        width: 55px;
+        height: 60px;
+        line-height: 60px;
+        letter-spacing: -0.05em;
+        text-align: center;
+        padding-right: 5px;
+        padding-left: 5px;
+        font-weight: 500;
+        background-color: transparent;
+        color: white;
+        border: solid 2px #e2b365;
+    }
+    
+    .ticket_atrist a {
+        width: 160px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-style: normal;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: white;
+        background: transparent;
+        transition: .3s;
+        border: solid 2px #e2b365;
+    }
+    
+    .art_flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .video_width {
+        width: 550px;
+        height: 400px;
+    }
+    
+    .artist_main_width {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    @media (max-width:1200px) {
+        .artist_main_width {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .video_width {
+            width: 400px;
+            height: 325px;
+        }
+    }
+    
+    @media (max-width:992px) {
+        .video_width {
+            width: 100%;
+            height: 500px;
+            margin-bottom: 2rem;
+        }
+    }
+    
+    @media (max-width:768px) {
+        .art_flex {
+            display: block;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .artist_caption {
+            padding: 20px 10px 10px;
+        }
+        .art_mb-2 {
+            margin-top: 1rem;
+        }
+        .ticket_flex1 {
+            display: flex;
+            justify-content: end;
+        }
+        .ticket_atrist a {
+            width: 140px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-style: normal;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            text-transform: capitalize;
+            color: #14171d!important;
+            background: transparent;
+            transition: .3s;
+            border: solid 1px #e2b365;
+            background-color: #e2b365;
+        }
+        .video_width {
+            width: 325px;
+            height: 225px;
+        }
+        .video_flex {
+            display: flex;
+            justify-content: center;
+        }
+        .artist_py {
+            padding-top: 5rem;
+            padding-bottom: 2rem;
+        }
+        .artist_main_width {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
