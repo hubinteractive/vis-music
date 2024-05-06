@@ -26,16 +26,16 @@
                                         Home
                                     </a>
                                 </li>
-                                <li><a href="/">
+                                <li><a href="{% url 'vis_breeze:about_us' %}">
                                     About Us
                                 </a>
                                 </li>
-                                <li><a href="/">
+                                <li><a href="{% url 'vis_breeze:contact_us' %}">
                                     Contact us
                                 </a>
                                 </li>
                                 <li>
-                                    <a style="font-weight: 600;" href="/">
+                                    <a style="font-weight: 600;" href="{% url 'vis_breeze:programme' %}">
                                         Programme
                                     </a>
                                 </li>
@@ -43,9 +43,9 @@
                         </div>
                     </div>
                     <div class="col-md-3 d-flex align-items-center order_2576 bd_py_dark">
-                        <p class="mb-0 ms-2 txt_decoration fs915 footer_menu">
+                        <a href="{% url 'vis_breeze:subscribe' %}" class="mb-0 ms-2 txt_decoration subs_font footer_menu_subs" style="color:rgb(14, 21, 25);">
                             Subscribe to our newsletter
-                        </p>
+                        </a>
                     </div>
                 </div>
 
@@ -90,20 +90,20 @@
 
                         <div class="d-flex align-items-center my-7">
                             <div class="me-6">
-                                <a class="font_logo" href="https://www.facebook.com/3gonga/" target="_blank">
+                                <a class="font_logo" href="#" target="_blank">
                                     Partner 1
                                 </a>
 
                             </div>
 
                             <div class="me-6">
-                                <a class="font_logo" href="https://www.facebook.com/3gonga/" target="_blank">
+                                <a class="font_logo" href="#" target="_blank">
                                     Partner 2
                                 </a>
                             </div>
 
                             <div>
-                                <a class="font_logo" href="https://www.facebook.com/3gonga/" target="_blank">
+                                <a class="font_logo" href="#" target="_blank">
                                     Partner 3
                                 </a>
                             </div>
@@ -121,7 +121,7 @@
                     <div class="col-lg-6 order_1576">
                         <ul class="footer_terms_list ps-0 mb-0">
                             <li>
-                                <a href="#">
+                                <a href="{% url 'vis_breeze:terms' %}">
                                     Terms & Conditions
                                 </a>
                             </li>
@@ -146,7 +146,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="insta_footer" href="https://www.instagram.com/3gonga/" target="_blank">
+                                <a class="insta_footer" href="https://www.instagram.com/island_vis_music/" target="_blank">
 
 
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="rgb(14, 21, 25);" class="bi bi-instagram" viewBox="0 0 16 16">

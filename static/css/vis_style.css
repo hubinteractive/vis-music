@@ -156,14 +156,14 @@
     .navbar_768 {
         background-color: transparent;
         margin: 0;
-        filter: sepia(15%);
+        /* filter: sepia(15%); */
     }
     
     @media (max-width:768px) {
         .navbar_768 {
             background-color: whitesmoke;
             margin: 0;
-            filter: sepia(15%);
+            /* filter: sepia(15%); */
         }
         .bg-body-tertiary.scrolled {
             background-color: transparent!important;
@@ -304,7 +304,7 @@
             width: 100%;
             height: 100%;
             background-size: cover;
-            background-color: #0f91c3;
+            /* background-color: #0f91c3; */
             opacity: .62;
         }
     }
@@ -943,6 +943,23 @@
         font-weight: 500;
     }
     
+    .subs_font {
+        font-size: .915rem
+    }
+    
+    .footer_menu_subs {
+        padding: 24px 20px;
+    }
+    
+    @media (max-width:1450px) {
+        .font_logo {
+            font-size: 1.45rem;
+        }
+        .subs_font {
+            font-size: .815rem
+        }
+    }
+    
     @media (max-width:768px) {
         .my-7 {
             margin-top: 3rem;
@@ -1190,6 +1207,34 @@
         margin: 0 auto;
         position: relative;
         background-image: url(../../static/img/diletun.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .artist_6b {
+        max-width: 1200px;
+        height: 550px;
+        overflow: hidden;
+        padding: 15px 0;
+        width: 98%;
+        margin: 0 auto;
+        position: relative;
+        background-image: url(../../static/img/matija.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .artist_7b {
+        max-width: 1200px;
+        height: 550px;
+        overflow: hidden;
+        padding: 15px 0;
+        width: 98%;
+        margin: 0 auto;
+        position: relative;
+        background-image: url(../../static/img/vasil.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;

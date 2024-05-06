@@ -60,3 +60,38 @@ def dilatum(request):
 
     }
     return render(request, 'dilatum.html',  context)
+
+
+def matija(request):
+    context = {
+
+    }
+    return render(request, 'matija.html',  context)
+
+
+def vasil(request):
+    context = {
+
+    }
+    return render(request, 'vasil.html',  context)
+
+
+def programme(request):
+    context = {
+
+    }
+    return render(request, 'programme.html',  context)
+
+
+def terms(request):
+    context = {
+
+    }
+    return render(request, 'terms.html',  context)
+
+
+def subscribe(request):
+    context = {
+
+    }
+    return render(request, 'subscribe.html',  context)

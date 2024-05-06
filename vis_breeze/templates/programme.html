@@ -1,0 +1,478 @@
+{% extends "core/base.html" %} {% block title %} Home | {% endblock title %} {% load static %} {% block content %}
+
+<style>
+
+</style>
+
+<section id="programme_vis">
+
+
+    <div class="container-flud p-0 banner_vis_wd_ht_light banner_bg position-relative shadow-lg" style="height: 400px;">
+        <div class="fixed-top nav_mask dynamic_mask" style="width: 100%;height: 70px;background-color: #09242d;z-index: 2;"></div>
+        <div class="banner_mask">
+
+            <div class="banner_text padd_banner_caption_light banner-caption_light">
+
+                Vis Music Breeze
+                <h2 class="mt-3" style="color:#09242d; font-weight: 300;">Paying Programme</h2>
+
+                <!-- banner css -->
+                <style>
+                    .banner_mask {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-size: 100%;
+                        /* background-color: rgba(0, 0, 0, .75); */
+                        /* background-color: rgba(29, 41, 50, .92); */
+                        background-color: rgb(255, 255, 255, .82);
+                        z-index: 1;
+                    }
+                    
+                    .banner_vis_wd_ht_light {
+                        background-image: url(../../../static/img/vis-2jpg.jpg);
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: auto;
+                        background-size: cover;
+                        background-position: right 35% bottom 10%;
+                    }
+                    
+                    .banner-caption_light {
+                        z-index: 5;
+                        white-space: normal;
+                        font-size: 5rem;
+                        line-height: 1;
+                        font-weight: 700;
+                        color: rgb(255, 255, 255);
+                        letter-spacing: -1px;
+                        border-width: 0px;
+                        margin: 0px;
+                        margin-bottom: 2rem;
+                        color: whitesmoke;
+                        color: #d8a44f;
+                    }
+                    
+                    .padd_banner_caption_light {
+                        padding: 10.5% 10% 0 10%;
+                    }
+                    
+                    @media (max-width:1400px) {
+                        .banner-caption_light {
+                            font-size: 4rem;
+                        }
+                        .padd_banner_caption_light {
+                            padding: 20.5% 10% 0 10%;
+                        }
+                    }
+                    
+                    @media (max-width:992px) {
+                        .padd_banner_caption_light {
+                            padding: 22.5% 10% 0 10%;
+                        }
+                    }
+                    
+                    @media (max-width:768px) {
+                        .padd_banner_caption_light {
+                            padding: 35.5% 5% 0 5%;
+                        }
+                        .banner-caption_light {
+                            font-size: 3rem;
+                        }
+                    }
+                    
+                    @media (max-width:576px) {
+                        .padd_banner_caption_light {
+                            padding: 40.5% 5% 0 5%;
+                        }
+                        .banner-caption_light {
+                            font-size: 4rem;
+                            text-align: center;
+                        }
+                    }
+                    
+                    .y_divider {
+                        background-color: #4a677c;
+                        width: 1px;
+                        margin: 0 40px 0 10px;
+                        height: 150px;
+                    }
+                    
+                    .bran_logo_container {
+                        left: 5%;
+                        bottom: -10%;
+                        width: 50%;
+                        height: 200px;
+                        background-color: #e2b365;
+                    }
+                    
+                    .brand_logo_tzv {
+                        width: auto;
+                        height: 125px;
+                    }
+                    
+                    .brand_logo_3gonga {
+                        font-size: 2.5rem
+                    }
+                    
+                    @media (max-width:768px) {
+                        .brand_logo_tzv {
+                            width: auto;
+                            height: 65px;
+                        }
+                        .brand_logo_3gonga {
+                            font-size: 1.2rem;
+                            margin-top: 1rem;
+                        }
+                        .bran_logo_container {
+                            left: 5%;
+                            bottom: -11.5%;
+                            width: 90%;
+                            height: 100px;
+                            background-color: #e2b365;
+                        }
+                        .y_divider {
+                            width: 1px;
+                            margin: 0 20px 0 10px;
+                            height: 75px;
+                        }
+                    }
+                </style>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- content css -->
+    <div class="programme_content" style="margin-top: 7rem;margin-bottom: 7rem;">
+        <style>
+            .programme_content {
+                width: 89%;
+                margin: 0 auto;
+            }
+            
+            .wp-block-button {
+                font-size: 1em;
+                background-color: transparent;
+                border: 0;
+                border-radius: 0;
+                outline: 0;
+                appearance: none;
+                padding: 0;
+                cursor: pointer;
+                color: #000;
+                cursor: default;
+                display: inline-block;
+            }
+            
+            .wp-block-button__link::before {
+                background-color: #dedede;
+            }
+            
+            .wp-block-button__link::before {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 6px;
+                height: 100%;
+                z-index: -1;
+                width: calc(100% + 1ch);
+                /* background-color: #fffe54; */
+                transition: transform .2s ease-out, background-color .2s ease-out;
+                transform: translateY(-8px) scaleY(.3);
+                transform-origin: bottom;
+            }
+            
+            .wp-block-button__link::after {
+                width: 9px;
+                height: 12px;
+                background-image: url(../../static/img/down_arrow.svg);
+            }
+            
+            .wp-block-button__link:not([disabled])::after {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                right: -10px;
+                width: 16px;
+                height: 16px;
+                margin-top: 1px;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }
+            
+            .brand_logo_tzv_programme {
+                width: auto;
+                height: 95px;
+            }
+        </style>
+
+
+        <div class="programme_content">
+            <div class="" style="margin-bottom: 10rem;">
+                <h1 style="font-weight: 500;letter-spacing: -1px;">Paying Programme</h1>
+            </div>
+            <div class="d-flex justify-content-between align-items-baseline">
+                <div class="wp-block-button button--secondary button--download">
+                    <a class="wp-block-button__link position-relative" type="application/pdf" href="#" style="text-decoration: none;font-weight: 700;color:black">
+                    VMB2024-Programme
+                </a>
+                </div>
+
+                <div class="d-flex">
+                    <a href="https://www.tz-vis.hr/" target="_blank">
+                        <img class="brand_logo_tzv_programme" src="/static/img/tz-vis-logotip-mobile.png" alt="">
+                    </a>
+                    <div class="brand_logo_tzv mt-4 ms-4">
+                        <a href="https://www.facebook.com/3gonga/" target="_blank" class="brand_logo_3gonga" style="color: #47667d;font-weight: 500;text-decoration: none;font-size: 1.5rem;">
+                            3Gonga Logo
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .ms-7 {
+                margin-left: 5rem;
+            }
+            
+            .mb-7 {
+                margin-bottom: 5rem;
+            }
+            
+            #programme_vis h3 {
+                color: #09242d;
+                font-weight: 600;
+            }
+            
+            #programme_vis a {
+                color: #09242d
+            }
+            
+            .wp-block-button__link::before {
+                content: "";
+                display: block;
+                position: absolute;
+                width: calc(100% + 1ch);
+                background-color: #e7c283;
+                /* background-color: #43c1f1; */
+                transition: transform .2s ease-out, background-color .2s ease-out;
+                transform: translateY(-8px) scaleY(.3);
+                transform-origin: bottom;
+            }
+        </style>
+
+
+    </div>
+    <div class="container-fluid shadow-lg px-0" style="margin-bottom: 10rem;overflow: hidden;">
+        <div class="container-fluid shadow py-3 px-0">
+            <h1 class="offset-2" style="font-weight: 500;">
+                Poluotok Prilovo Vis, Croatia
+            </h1>
+        </div>
+
+        <!-- 28.06.2024 -->
+        <div class="row ">
+            <div class="col-lg-2 p-3" style="background-color: #ecf3fb;background-color: #e7c283;">
+                <hr>
+                <div class="ms-7">
+                    <h5 style="text-transform: uppercase;">FRIDAY</h5>
+                    <h3 class="" style="color:#042531; font-weight: 700;">28.06</h3>
+                </div>
+            </div>
+            <div class="col-lg-10 p-3">
+                <hr>
+
+                <h5>
+
+                    Grand Opening Night
+                </h5>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <hr>
+                        <h3>
+                            <a href="{% url 'vis_breeze:jazz_orchestra' %}">
+                            The National Jazz Orchestra
+                        </a>
+                        </h3>
+                        <h5 class="mb-7">R.Macedonia</h5>
+
+                        <div class="wp-block-button button--tertiary programme__schedule-cta position-relative">
+                            <a style="text-decoration: none;" class="wp-block-button__link" href="https://www.entrio.hr/en/event/music-breeze-vis-18574" target="_blank" rel="noreferrer noopener">
+                                Buy Ticket
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4">
+                        <hr>
+                        <h3>
+                            <a href="{% url 'vis_breeze:lana_janjanin' %}">
+                            Lana Janjanin
+                        </a>
+                        </h3>
+                        <h5 class="mb-7">R.Croatia</h5>
+                        <div class="wp-block-button button--tertiary programme__schedule-cta position-relative">
+                            <a style="text-decoration: none;" class="wp-block-button__link" href="https://www.entrio.hr/en/event/music-breeze-vis-18574" target="_blank" rel="noreferrer noopener">
+                                Buy Ticket
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 29.06.2024 -->
+        <div class="row ">
+            <div class="col-lg-2 p-3" style="background-color: #ecf3fb;background-color: #e7c283;">
+                <hr>
+                <div class="ms-7">
+                    <h5 style="text-transform: uppercase;">SATURDAY</h5>
+                    <h3 class="" style="color:#042531; font-weight: 700;">29.06</h3>
+                </div>
+            </div>
+            <div class="col-lg-10 p-3">
+                <hr>
+
+                <div class="row">
+                    <div class="col-lg-4 py-4">
+
+                        <h3>
+                            <a href="{% url 'vis_breeze:kafka' %}">
+                                Zashto Kafka?
+                            </a>
+                        </h3>
+                        <h5 class="mb-7">R.Serbia</h5>
+
+                        <div class="wp-block-button button--tertiary programme__schedule-cta position-relative">
+                            <a style="text-decoration: none;" class="wp-block-button__link" href="https://www.entrio.hr/en/event/music-breeze-vis-18574" target="_blank" rel="noreferrer noopener">
+                                Buy Ticket
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 py-4">
+
+                        <h3>
+                            <a href="{% url 'vis_breeze:vlatko' %}">
+                                Vlatko Stefanovski Trio
+                        </a>
+                        </h3>
+                        <h5 class="mb-7">R.Macedonia</h5>
+                        <div class="wp-block-button button--tertiary programme__schedule-cta position-relative">
+                            <a style="text-decoration: none;" class="wp-block-button__link" href="https://www.entrio.hr/en/event/music-breeze-vis-18574" target="_blank" rel="noreferrer noopener">
+                                Buy Ticket
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 py-4">
+                        <h3>
+                            <a href="{% url 'vis_breeze:dilatum' %}">
+                                Dilatum Jazz Quartet 
+                        </a>
+                        </h3>
+                        <h5 class="mb-7">R.Serbia</h5>
+                        <div class="wp-block-button button--tertiary programme__schedule-cta position-relative">
+                            <a style="text-decoration: none;" class="wp-block-button__link" href="https://www.entrio.hr/en/event/music-breeze-vis-18574" target="_blank" rel="noreferrer noopener">
+                                Buy Ticket
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 30.06.2024 -->
+        <div class="row ">
+            <div class="col-lg-2 p-3" style="background-color: #ecf3fb;background-color: #e7c283;">
+                <hr>
+                <div class="ms-7">
+                    <h5 style="text-transform: uppercase;">SUNDAY</h5>
+                    <h3 class="" style="color:#042531; font-weight: 700;">30.06</h3>
+                </div>
+            </div>
+            <div class="col-lg-10 p-3">
+                <hr>
+
+                <div class="row">
+                    <div class="col-lg-4 py-4">
+
+                        <h3>
+                            <a href="{% url 'vis_breeze:matija' %}">
+                                Matija Dedic Quartet(feat. Lu Dedic)
+                        </a>
+                        </h3>
+                        <h5 class="mb-7">R.Croatia</h5>
+
+                        <div class="wp-block-button button--tertiary programme__schedule-cta position-relative">
+                            <a style="text-decoration: none;" class="wp-block-button__link" href="https://www.entrio.hr/en/event/music-breeze-vis-18574" target="_blank" rel="noreferrer noopener">
+                                Buy Ticket
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 py-4">
+
+                        <h3>
+                            <a href="{% url 'vis_breeze:vasil' %}">
+                                Vasil Hadžimanov Band
+                        </a>
+                        </h3>
+                        <h5 class="mb-7">R.Serbia</h5>
+                        <div class="wp-block-button button--tertiary programme__schedule-cta position-relative">
+                            <a style="text-decoration: none;" class="wp-block-button__link" href="https://www.entrio.hr/en/event/music-breeze-vis-18574" target="_blank" rel="noreferrer noopener">
+                                Buy Ticket
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    .dynamic_mask {
+        opacity: 1;
+        transition: all 0.1s ease;
+    }
+    
+    .dynamic_mask_none {
+        opacity: 0;
+        transition: all 0.1s ease;
+    }
+</style>
+
+<script>
+    $(document).ready(function() {
+        $(window).bind('scroll', function() {
+            var navHeight = $('.nav_mask').height();
+            if ($(window).scrollTop() > navHeight) {
+                $('.dynamic_mask').addClass('dynamic_mask_none');
+
+            } else {
+                $('.dynamic_mask').removeClass('dynamic_mask_none');
+
+            }
+        });
+    });
+</script>
+
+
+{% endblock content %}
+
+<!-- <img style="width: 125px;height: auto; " src="{% static 'img/1_logo-lana-janjanin.svg' %} " alt=" "> -->
