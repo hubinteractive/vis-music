@@ -122,6 +122,7 @@
         transition: .3s;
     }
     /* navbar */
+    /* #navbar */
     
     .navbar {
         --bs-navbar-padding-x: 0;
@@ -1374,4 +1375,171 @@
             width: 90%;
             margin: 0 auto;
         }
+    }
+    /* #programme */
+    
+    .programme_content {
+        width: 89%;
+        margin: 0 auto;
+    }
+    
+    .wp-block-button {
+        font-size: 1em;
+        background-color: transparent;
+        border: 0;
+        border-radius: 0;
+        outline: 0;
+        appearance: none;
+        padding: 0;
+        cursor: pointer;
+        color: #000;
+        cursor: default;
+        display: inline-block;
+    }
+    
+    .wp-block-button__link::before {
+        background-color: #dedede;
+    }
+    
+    .wp-block-button__link::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 6px;
+        height: 100%;
+        z-index: -1;
+        width: calc(100% + 1ch);
+        /* background-color: #fffe54; */
+        transition: transform .2s ease-out, background-color .2s ease-out;
+        transform: translateY(-8px) scaleY(.3);
+        transform-origin: bottom;
+    }
+    
+    .wp-block-button__link::after {
+        width: 12px;
+        height: 15px;
+        background-image: url(../../static/img/external-link.svg);
+    }
+    
+    .wp-block-button__link:not([disabled])::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        right: -15px;
+        width: 16px;
+        height: 16px;
+        margin-top: 1px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    .brand_logo_tzv_programme {
+        width: auto;
+        height: 75px;
+    }
+    
+    .ms-7 {
+        margin-left: 5rem;
+    }
+    
+    .mb-7 {
+        margin-bottom: 5rem;
+    }
+    
+    #programme_vis h3 {
+        color: #09242d;
+        font-weight: 600;
+    }
+    
+    #programme_vis a {
+        color: #09242d
+    }
+    
+    .wp-block-button__link::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: calc(100% + 1ch);
+        background-color: #e7c283;
+        /* background-color: #43c1f1; */
+        transition: transform .2s ease-out, background-color .2s ease-out;
+        transform: translateY(-8px) scaleY(.3);
+        transform-origin: bottom;
+    }
+    
+    .pr_mb-6 {
+        margin-bottom: 4rem;
+    }
+    
+    .pr_my_6 {
+        margin-top: 7rem;
+        margin-bottom: 4rem;
+    }
+    
+    .pr_flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .pr_order_1 {
+        order: 1
+    }
+    
+    .pr_order_2 {
+        order: 2
+    }
+    
+    @media (max-width:992px) {
+        .pr_flex {
+            display: grid;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .pr_order_1 {
+            order: 2
+        }
+        .pr_order_2 {
+            order: 1
+        }
+    }
+    
+    .b_shadow {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    
+    @media (max-width:992px) {
+        .pr_d-none768 {
+            display: none;
+        }
+        .pr_mb-2 {
+            margin-bottom: 2rem;
+        }
+        .pr_main_content {
+            width: 92%;
+            margin: 0 auto;
+        }
+        .offset-2 {
+            margin-left: 0%;
+        }
+        .programme_content {
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 3rem;
+        }
+        .pr_text_center {
+            text-align: center;
+        }
+        .shadow-lg {
+            box-shadow: var(--bs-box-shadow-lg) !important;
+        }
+        #programme_vis h1 {
+            font-size: 2.25rem;
+        }
+    }
+    
+    .pr_flex_c {
+        display: flex;
+        align-items: center;
     }
