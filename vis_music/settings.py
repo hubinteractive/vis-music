@@ -18,6 +18,14 @@ import django_heroku
 import dj_database_url
 from decouple import config
 
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp-mail.outlook.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'igor.nikolovski71@outlook.com'
+EMAIL_HOST_PASSWORD = 'IgorNik0871+#'
+EMAIL_USE_TLS = True
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 

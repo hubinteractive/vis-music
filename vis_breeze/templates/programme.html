@@ -371,32 +371,10 @@
         <!-- end content programme -->
     </div>
 </section>
-<style>
-    .dynamic_mask {
-        opacity: 1;
-        transition: all 0.1s ease;
-    }
-    
-    .dynamic_mask_none {
-        opacity: 0;
-        transition: all 0.1s ease;
-    }
-</style>
 
-<script>
-    $(document).ready(function() {
-        $(window).bind('scroll', function() {
-            var navHeight = $('.nav_mask').height();
-            if ($(window).scrollTop() > navHeight) {
-                $('.dynamic_mask').addClass('dynamic_mask_none');
 
-            } else {
-                $('.dynamic_mask').removeClass('dynamic_mask_none');
 
-            }
-        });
-    });
-</script>
+
 
 
 {% endblock content %}

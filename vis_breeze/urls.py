@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import index, about, contact, lana_janjanin, jazz_orchestra, kafka, vlatko, dilatum, matija, vasil, programme, terms, subscribe
+from .views import index, about, contact, lana_janjanin, jazz_orchestra, kafka, vlatko, dilatum, matija, vasil, programme, terms, subscribe, success
 
 
 app_name = 'vis_breeze'
@@ -9,6 +9,7 @@ urlpatterns = [
     path('', index, name='index'),
     path('about/', about, name='about_us'),
     path('contact/', contact, name='contact_us'),
+    path('success/', success, name='success'),
     path('lana_janjanin/', lana_janjanin, name='lana_janjanin'),
     path('jazz_orchestra/', jazz_orchestra, name='jazz_orchestra'),
     path('kafka/', kafka, name='kafka'),
