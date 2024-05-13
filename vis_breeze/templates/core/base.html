@@ -143,7 +143,7 @@
     <!-- background color navbar on scroll -->
     <style>
         .dynamic_mask {
-            opacity: 1;
+            opacity: 0;
             transition: all 0.5s ease;
         }
         
@@ -151,21 +151,27 @@
             opacity: 0;
             transition: all 0.5s ease;
         }
+        
+        @media (max-width:992px) {
+            .nav_margin_05 {
+                margin: 0.5rem;
+            }
+        }
     </style>
 
     <script>
-        $(document).ready(function() {
-            $(window).bind('scroll', function() {
-                var navHeight = $('.nav_mask').height();
-                if ($(window).scrollTop() > navHeight) {
-                    $('.dynamic_mask').addClass('dynamic_mask_none');
+        // $(document).ready(function() {
+        //     $(window).bind('scroll', function() {
+        //         var navHeight = $('.nav_mask').height();
+        //         if ($(window).scrollTop() > navHeight) {
+        //             $('.dynamic_mask').addClass('dynamic_mask_none');
 
-                } else {
-                    $('.dynamic_mask').removeClass('dynamic_mask_none');
+        //         } else {
+        //             $('.dynamic_mask').removeClass('dynamic_mask_none');
 
-                }
-            });
-        });
+        //         }
+        //     });
+        // });
     </script>
     <!-- end background color navbar on scroll -->
 

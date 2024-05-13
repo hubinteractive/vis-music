@@ -91,13 +91,13 @@
 
 
 
-<nav id="navNavbar" class="navbar bg-body-tertiary fixed-top" style="background-color: transparent;padding-top: 0;">
+<nav id="navNavbar" class="navbar bg-body-tertiary fixed-top nav_margin_05" style="background-color: transparent;padding-top: 0;padding-bottom: 0;">
     <div class="container-fluid d-flex justify-content-between align-items-center navbar_768" style="padding-top: .75rem;padding-bottom: .75rem;">
 
         <div class="d-flex justify-content-center logo_fc logo_abs align-items-center">
 
             <div class="me-3 d-none_max_576 mb-0 mt-2">
-                <a class="dynamic" href="/" style="font-weight: 800;font-size: 1.35rem;letter-spacing: -1px;text-decoration: none;">
+                <a class="dynamic" href="/" style="font-weight: 600;font-size: 1.35rem;letter-spacing: -1px;text-decoration: none;">
                     Vis-Music
                 </a>
             </div>
@@ -106,9 +106,9 @@
 
             <div class="ms-3 d-none_max_992">
 
-                <h6 class="mt-2 dynamic mb-0">
+                <!-- <h6 class="mt-2 dynamic mb-0">
                     28-30.06.24
-                </h6>
+                </h6> -->
                 <!-- <h6>
                     Vis Island
                 </h6> -->
@@ -127,9 +127,15 @@
                 <li class="nav-item me-4 d-none_max_768">
                     <a class="nav-link dynamic" data-bs-toggle="modal" data-bs-target="#exampleModal" style="cursor: pointer;">Contact</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
 
                     <div class="ticket_button"> <a class="txt_decoration" style="color:white" href="https://www.entrio.hr/en/event/music-breeze-vis-18574"> Tickets </a> </div>
+                </li> -->
+                <li class="nav-item">
+
+                    <div class="wp-block-button button--tertiary programme__schedule-cta position-relative">
+                        <button id="submitBtn" type="submit" class="wp-block-button__link" style="background-color: transparent;border: 0;font-weight: 700;">Tickets</button>
+                    </div>
                 </li>
 
 
@@ -413,7 +419,7 @@
     
     .bg-body-tertiary.scrolled {
         background-color: rgba(255, 255, 255, .92)!important;
-        transition: top 0.5s;
+        transition: top 0.3s;
         /* Change to your desired color */
     }
 </style>
@@ -448,7 +454,7 @@
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <style>
     .dynamic {
-        color: white!important
+        color: rgba(0, 0, 0, 1)!important
     }
     
     .brand_divider {
@@ -482,12 +488,11 @@
         --bs-navbar-toggler-focus-width: 0;
         --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
     }
-    
-    .scrolled {
+    /* .scrolled {
         color: #042531!important;
-    }
+    } */
 </style>
-<script>
+<!-- <script>
     $(document).ready(function() {
         $(window).bind('scroll', function() {
             var navHeight = $('.navbar').height();
@@ -502,4 +507,4 @@
             }
         });
     });
-</script>
+</script> -->
