@@ -164,10 +164,10 @@
 
                 <div class="pr_flex">
 
-                    <div class="wp-block-button button--secondary button--download pr_order_1">
-                        <a class="wp-block-button__link position-relative" type="application/pdf" href="#" style="text-decoration: none;font-weight: 700;color:black">
+                    <div class="wp-block-button button--secondary button--download pr_order_1 my--5">
+                        <a class="wp-block-button__link position-relative" type="application/pdf" href="{% url 'vis_breeze:pdf' %}" style="text-decoration: none;font-weight: 700;color:black">
                     VMB2024-Programme
-                </a>
+                          </a>
                     </div>
 
                     <div class="d-flex align-items-center pr_order_2">
@@ -176,9 +176,9 @@
                         </a>
 
                         <div class="brand_logo_tzv ms-4 d-flex align-items-center w-100">
-                            <a href="https://www.facebook.com/3gonga/" target="_blank" class="brand_logo_3gonga mt-0" style="color: #47667d;font-weight: 500;text-decoration: none;font-size: 1.5rem;">
-                            3Gonga <span class="pr_d-none768">Logo</span>
-                        </a>
+                            <a href="https://www.facebook.com/3gonga" target="_blank">
+                                <img class="partners_img" style="width: 105px;" src="/static/img/3_1.svg" alt="Cetina">
+                            </a>
 
                         </div>
                     </div>
@@ -191,7 +191,7 @@
         </div>
 
         <!-- content programme -->
-        <div class="container-fluid  px-0" style="margin-bottom: 10rem;overflow: hidden;">
+        <div id="target" class="container-fluid  px-0" style="margin-bottom: 10rem;overflow: hidden;">
             <div class="container-fluid  py-3 px-0">
                 <h1 class="offset-2 pr_text_center" style="font-weight: 500;">
                     Poluotok Prilovo Vis, Croatia
@@ -201,19 +201,26 @@
             <!-- 28.06.2024 -->
             <div class="row ">
                 <div class="col-lg-2 p-3" style="background-color: #ecf3fb;background-color: #e7c283;">
-                    <hr>
-                    <div class="ms-7">
-                        <h5 style="text-transform: uppercase;">FRIDAY</h5>
-                        <h3 class="" style="color:#042531; font-weight: 700;">28.06</h3>
+                    <hr class="d-lg--none">
+                    <div class="ms-7 date_start">
+                        <h5 class="week_day">FRIDAY</h5>
+                        <h3 class="ms--7" style="color:#042531; font-weight: 700;margin-bottom: 0">28.06</h3>
                     </div>
                 </div>
                 <div class="col-lg-10 p-3">
                     <hr>
+                    <div class="d-flex justify-content-between align-items-center w--50  link_external">
+                        <h5 class="mb-0">
 
-                    <h5>
+                            Grand Opening Night
+                        </h5>
 
-                        Grand Opening Night
-                    </h5>
+                        <div class="wp-block-button button--tertiary programme__schedule-cta position-relative">
+                            <a style="text-decoration: none;" class="wp-block-button__link" href="https://www.entrio.hr/en/event/music-breeze-vis-18574" target="_blank" rel="noreferrer noopener">
+                        Buy Ticket
+                    </a>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-lg-4">
                             <hr>
@@ -225,9 +232,12 @@
                             <h5 class="mb-7">Macedonia</h5>
 
                             <div class="wp-block-button button--tertiary programme__schedule-cta position-relative">
-                                <a style="text-decoration: none;" class="wp-block-button__link" href="https://www.entrio.hr/en/event/music-breeze-vis-18574" target="_blank" rel="noreferrer noopener">
-                                Buy Ticket
-                            </a>
+                                <a href="https://www.facebook.com/nacionalenjazzorkestar/" class="link_external" style="text-decoration: underline;" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="svg_artist_dark bi bi-facebook me-1 link_external" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
+                          </svg> National Jazz Orchestra
+                                </a>
+                                </a>
                             </div>
 
                         </div>
@@ -235,14 +245,12 @@
                             <hr>
                             <h3>
                                 <a href="{% url 'vis_breeze:lana_janjanin' %}">
-                            Lana Janjanin
+                            Lana Janjanin Quartet
                         </a>
                             </h3>
                             <h5 class="mb-7">Croatia/Slovenia</h5>
                             <div class="wp-block-button button--tertiary programme__schedule-cta position-relative">
-                                <a style="text-decoration: none;" class="wp-block-button__link" href="https://www.entrio.hr/en/event/music-breeze-vis-18574" target="_blank" rel="noreferrer noopener">
-                                Buy Ticket
-                            </a>
+                                <a class="link_external" href="https://lanajanjanin.com/node/1" target="_blank">www.lanajanjanin.com</a>
                             </div>
 
                         </div>
@@ -255,17 +263,31 @@
             <!-- 29.06.2024 -->
             <div class="row ">
                 <div class="col-lg-2 p-3" style="background-color: #ecf3fb;background-color: #e7c283;">
-                    <hr>
-                    <div class="ms-7">
-                        <h5 style="text-transform: uppercase;">SATURDAY</h5>
-                        <h3 class="" style="color:#042531; font-weight: 700;">29.06</h3>
+
+                    <hr class="d-lg--none">
+                    <div class="ms-7 date_start">
+                        <h5 class="week_day">SATURDAY</h5>
+                        <h3 class="ms--7 mb-0" style="color:#042531; font-weight: 700;">29.06</h3>
                     </div>
                 </div>
                 <div class="col-lg-10 p-3">
                     <hr>
+                    <div class="d-flex justify-content-between align-items-center w--50  link_external">
+                        <h5 class="mb-0">
 
+                            Second Night
+                        </h5>
+
+                        <div class="wp-block-button button--tertiary programme__schedule-cta position-relative">
+                            <a style="text-decoration: none;" class="wp-block-button__link" href="https://www.entrio.hr/en/event/music-breeze-vis-18574" target="_blank" rel="noreferrer noopener">
+                        Buy Ticket
+                    </a>
+                        </div>
+                    </div>
+                    <hr>
                     <div class="row">
                         <div class="col-lg-4 py-4">
+
 
                             <h3>
                                 <a href="{% url 'vis_breeze:kafka' %}">
@@ -274,13 +296,20 @@
                             </h3>
                             <h5 class="mb-7">Serbia</h5>
 
-                            <div class="wp-block-button button--tertiary programme__schedule-cta position-relative">
-                                <a style="text-decoration: none;" class="wp-block-button__link" href="https://www.entrio.hr/en/event/music-breeze-vis-18574" target="_blank" rel="noreferrer noopener">
-                                Buy Ticket
-                            </a>
+                            <div class="d-flex">
+                                <a href="https://www.facebook.com/WhyKafka/" class="d-flex link_external" target="_blank" style="text-decoration: underline;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-facebook svg_artist_dark" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
+                                  </svg>
+
+                                    <p class="ms-3">Zashto Kafka? </p>
+                                </a>
+
+
                             </div>
 
                         </div>
+                        <hr class="d-3xl--none">
                         <div class="col-lg-4 py-4">
 
                             <h3>
@@ -289,25 +318,26 @@
                         </a>
                             </h3>
                             <h5 class="mb-7">Macedonia</h5>
-                            <div class="wp-block-button button--tertiary programme__schedule-cta position-relative">
-                                <a style="text-decoration: none;" class="wp-block-button__link" href="https://www.entrio.hr/en/event/music-breeze-vis-18574" target="_blank" rel="noreferrer noopener">
-                                Buy Ticket
-                            </a>
-                            </div>
+
 
                         </div>
+
+                        <hr class="d-3xl--none">
                         <div class="col-lg-4 py-4">
+
                             <h3>
                                 <a href="{% url 'vis_breeze:dilatum' %}">
                                 Dilatum Jazz Quartet 
                         </a>
                             </h3>
                             <h5 class="mb-7">Croatia</h5>
-                            <div class="wp-block-button button--tertiary programme__schedule-cta position-relative">
-                                <a style="text-decoration: none;" class="wp-block-button__link" href="https://www.entrio.hr/en/event/music-breeze-vis-18574" target="_blank" rel="noreferrer noopener">
-                                Buy Ticket
+                            <a href="https://m.facebook.com/story.php?story_fbid=pfbid02bLgViQNmSfGoHgDwFjL6Y8mzXZErF5GaPfq4b4L9zhFBMGC8o3PGi5AdG8ePG2sxl&amp;id=157359107660902" class="d-flex link_external" target="_blank" style="text-decoration: underline;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-facebook svg_artist_dark" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
+                              </svg>
+
+                                <p class="ms-3">Dilatum Jazz Quartet</p>
                             </a>
-                            </div>
 
                         </div>
                     </div>
@@ -319,14 +349,29 @@
             <!-- 30.06.2024 -->
             <div class="row ">
                 <div class="col-lg-2 p-3" style="background-color: #ecf3fb;background-color: #e7c283;">
-                    <hr>
-                    <div class="ms-7">
-                        <h5 style="text-transform: uppercase;">SUNDAY</h5>
-                        <h3 class="" style="color:#042531; font-weight: 700;">30.06</h3>
+                    <hr class="d-lg--none">
+
+                    <div class="ms-7 date_start">
+                        <h5 class="week_day">SUNDAY</h5>
+                        <h3 class="mb-0 ms--7" style="color:#042531; font-weight: 700;">30.06</h3>
                     </div>
                 </div>
                 <div class="col-lg-10 p-3">
                     <hr>
+                    <div class="d-flex justify-content-between align-items-center w--50">
+                        <h5 class="mb-0">
+
+                            Third Night
+                        </h5>
+
+                        <div class="wp-block-button button--tertiary programme__schedule-cta position-relative">
+                            <a style="text-decoration: none;" class="wp-block-button__link" href="https://www.entrio.hr/en/event/music-breeze-vis-18574" target="_blank" rel="noreferrer noopener">
+                        Buy Ticket
+                    </a>
+                        </div>
+                    </div>
+                    <hr>
+
 
                     <div class="row">
                         <div class="col-lg-4 py-4">
@@ -338,13 +383,13 @@
                             </h3>
                             <h5 class="mb-7">Croatia</h5>
 
-                            <div class="wp-block-button button--tertiary programme__schedule-cta position-relative">
-                                <a style="text-decoration: none;" class="wp-block-button__link" href="https://www.entrio.hr/en/event/music-breeze-vis-18574" target="_blank" rel="noreferrer noopener">
-                                Buy Ticket
+                            <a href="https://matijadedic.com/" class="d-flex link_external" target="_blank">
+                                www.matijadedic.com
                             </a>
-                            </div>
 
                         </div>
+
+                        <hr class="d-3xl--none">
                         <div class="col-lg-4 py-4">
 
                             <h3>
@@ -353,11 +398,9 @@
                         </a>
                             </h3>
                             <h5 class="mb-7">Serbia/Macedoania</h5>
-                            <div class="wp-block-button button--tertiary programme__schedule-cta position-relative">
-                                <a style="text-decoration: none;" class="wp-block-button__link" href="https://www.entrio.hr/en/event/music-breeze-vis-18574" target="_blank" rel="noreferrer noopener">
-                                Buy Ticket
+                            <a href="https://www.vhband.com/ " class="d-flex link_external" target="_blank">
+                                www.vhband.com
                             </a>
-                            </div>
 
                         </div>
                     </div>
@@ -372,10 +415,28 @@
     </div>
 </section>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.1.135/jspdf.min.js"></script>
 
 
+<script>
+    $(function() {
 
-
+        var specialElementHandlers = {
+            '#editor': function(element, renderer) {
+                return true;
+            }
+        };
+        $('#cmd').click(function() {
+            var doc = new jsPDF();
+            doc.fromHTML($('#target').html(), 15, 15, {
+                'width': 170,
+                'elementHandlers': specialElementHandlers
+            });
+            doc.save('sample-file.pdf');
+        });
+    });
+</script>
 
 {% endblock content %}
 

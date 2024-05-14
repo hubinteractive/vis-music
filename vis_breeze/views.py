@@ -109,6 +109,13 @@ def subscribe(request):
     return render(request, 'subscribe.html',  context)
 
 
+def pdf(request):
+    context = {
+
+    }
+    return render(request, 'programme_vis_2024.pdf',  context)
+
+
 
 
 

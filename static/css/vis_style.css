@@ -297,7 +297,7 @@
         }
         
         .banner_vis_wd_ht {
-            background-image: url(../../../static/img/vis-banner_Edit_2.jpg);
+            background-image: url(../../../static/img/vis-banner_Edit_2.webp);
             background-repeat: no-repeat;
             width: 100%;
             height: auto;
@@ -307,7 +307,7 @@
         
         @media (max-width:576px) {
             .banner_vis_wd_ht {
-                background-image: url(../../../static/img/vis-banner_Edit_2.jpg);
+                background-image: url(../../../static/img/vis-banner_Edit_2.webp);
                 background-position: right 15% bottom 45%;
             }
         }
@@ -1333,7 +1333,7 @@
             width: 98%;
             margin: 0 auto;
             position: relative;
-            background-image: url(../../static/img/vasil.jpg);
+            background-image: url(../../static/img/vasil_1E.webp);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -1579,7 +1579,7 @@
         
         @media (max-width:992px) {
             .pr_mb-6 {
-                margin-bottom: 1rem;
+                margin-bottom: 4em;
             }
         }
         
@@ -1620,6 +1620,14 @@
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         }
         
+        .w--50 {
+            width: 50%;
+        }
+        
+        .d-3xl--none {
+            display: none;
+        }
+        
         @media (max-width:992px) {
             .pr_d-none768 {
                 display: none;
@@ -1646,8 +1654,52 @@
                 box-shadow: var(--bs-box-shadow-lg) !important;
             }
             #programme_vis h1 {
-                font-size: 2.25rem;
+                font-size: 1.85rem;
             }
+            #programme_vis .ms-7 {
+                margin-left: 0;
+            }
+            #programme_vis .ms--7 {
+                margin-left: 1rem;
+            }
+            #programme_vis .mb-7 {
+                margin-bottom: 3rem;
+            }
+            #programme_vis h3 {
+                font-size: calc(1.25rem + .4vw);
+            }
+            .w--50 {
+                width: 100%;
+            }
+            .link_external {
+                font-size: .875rem;
+            }
+            .date_start {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .d-lg--none {
+                display: none;
+            }
+            .d-3xl--none {
+                display: block;
+            }
+            .week_day {
+                text-transform: uppercase;
+                margin-bottom: 0;
+                color: #1d2932;
+                font-weight: 700;
+                font-size: calc(1.15rem + 0.4vw)!important;
+            }
+            .my--5 {
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+            }
+        }
+        
+        .mt-110 {
+            margin-top: 5rem;
         }
         
         .pr_flex_c {
