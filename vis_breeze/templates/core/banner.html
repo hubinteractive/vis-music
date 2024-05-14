@@ -37,7 +37,9 @@
             }
             
             .brand_logo_3gonga {
-                font-size: 2.5rem
+                width: auto;
+                height: 135px;
+                margin-top: -.75rem;
             }
             
             @media (max-width:1450px) {
@@ -52,14 +54,15 @@
                     width: auto;
                     height: 65px;
                 }
-                .brand_logo_3gonga {
-                    font-size: 1.4rem;
-                    margin-top: 1rem;
-                }
                 .y_divider {
                     width: 1px;
                     margin: 0 20px 0 10px;
                     height: 75px;
+                }
+                .brand_logo_3gonga {
+                    width: auto;
+                    height: 85px;
+                    margin-top: -.25rem;
                 }
             }
             
@@ -75,10 +78,6 @@
                     width: auto;
                     height: 65px;
                 }
-                .brand_logo_3gonga {
-                    font-size: 1.4rem;
-                    margin-top: 1rem;
-                }
                 .y_divider {
                     width: 1px;
                     margin: 0 20px 0 10px;
@@ -90,10 +89,6 @@
                 .brand_logo_tzv {
                     width: auto;
                     height: 65px;
-                }
-                .brand_logo_3gonga {
-                    font-size: 1.2rem;
-                    margin-top: 1rem;
                 }
                 .bran_logo_container {
                     left: 5%;
@@ -115,9 +110,9 @@
             </a>
             <div class="y_divider"></div>
 
-            <div class="brand_logo_tzv mt-4">
-                <a href="https://www.facebook.com/3gonga/" target="_blank" class="brand_logo_3gonga" style="color: white;font-weight: 500;text-decoration: none;">
-                    3 Gonga
+            <div class="brand_logo_tzv">
+                <a href="https://www.facebook.com/3gonga" target="_blank">
+                    <img class="brand_logo_3gonga" src="{% static 'img/logo_3gonga_e1.svg' %}" alt="">
                 </a>
 
             </div>

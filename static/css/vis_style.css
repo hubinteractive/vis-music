@@ -1152,7 +1152,7 @@
         @media (max-width: 768px) {
             #lana .h2,
             #lana h2 {
-                font-size: 1.75rem;
+                font-size: 1.35rem;
             }
             #lana .h5,
             #lana h5 {
@@ -1197,6 +1197,12 @@
             background-size: cover;
         }
         
+        @media (max-width:992px) {
+            .artist_lb {
+                height: 375px;
+            }
+        }
+        
         .artist_2b {
             max-width: 1200px;
             height: 550px;
@@ -1209,6 +1215,12 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+        }
+        
+        @media (max-width:992px) {
+            .artist_2b {
+                height: 375px;
+            }
         }
         
         .artist_3b {
@@ -1225,6 +1237,13 @@
             background-size: cover;
         }
         
+        @media (max-width:992px) {
+            .artist_3b {
+                height: 325px;
+                background-position: left;
+            }
+        }
+        
         .artist_4b {
             max-width: 1200px;
             height: 550px;
@@ -1237,6 +1256,13 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+        }
+        
+        @media (max-width:992px) {
+            .artist_4b {
+                height: 375px;
+                background-position: left;
+            }
         }
         
         .artist_5b {
@@ -1253,6 +1279,13 @@
             background-size: cover;
         }
         
+        @media (max-width:992px) {
+            .artist_5b {
+                height: 375px;
+                background-position: left;
+            }
+        }
+        
         .artist_6b {
             max-width: 1200px;
             height: 550px;
@@ -1267,6 +1300,13 @@
             background-size: cover;
         }
         
+        @media (max-width:992px) {
+            .artist_6b {
+                height: 375px;
+                background-position: left;
+            }
+        }
+        
         .artist_7b {
             max-width: 1200px;
             height: 550px;
@@ -1279,6 +1319,13 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+        }
+        
+        @media (max-width:992px) {
+            .artist_7b {
+                height: 375px;
+                background-position: left;
+            }
         }
         
         .artist_w1 {
@@ -1710,4 +1757,8 @@
         
         .svg_artist {
             fill: #e2b365;
+        }
+        
+        .svg_artist_dark {
+            fill: #1d2932;
         }
