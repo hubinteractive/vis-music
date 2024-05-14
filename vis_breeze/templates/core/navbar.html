@@ -1,10 +1,6 @@
 {% load static %}
 
-<!-- navbar -->
-<!-- Button trigger modal -->
-<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Launch demo modal
-  </button> -->
+
 
 <!-- Modal -->
 <div class="footer_contact">
@@ -90,60 +86,34 @@
 
 
 
+<nav id="navNavbar" class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid d-flex justify-content-between align-items navbar_768" style="z-index: 1;">
+        <a class="navbar-brand ps-3" href="/" style="font-weight: 700;">Vis Music</a>
+        <div class="d-flex align-items-center">
 
-<nav id="navNavbar" class="navbar bg-body-tertiary fixed-top nav_margin_05" style="background-color: transparent;padding-top: 0;padding-bottom: 0;">
-    <div class="container-fluid d-flex justify-content-between align-items-center navbar_768" style="padding-top: .75rem;padding-bottom: .75rem;">
-
-        <div class="d-flex justify-content-center logo_fc logo_abs align-items-center">
-
-            <div class="me-3 d-none_max_576 mb-0 mt-2">
-                <a class="dynamic" href="/" style="font-weight: 600;font-size: 1.35rem;letter-spacing: -1px;text-decoration: none;">
-                    Vis-Music
-                </a>
-            </div>
-
-            <div class="brand_divider d-none_max_992"></div>
-
-            <div class="ms-3 d-none_max_992">
-
-                <!-- <h6 class="mt-2 dynamic mb-0">
-                    28-30.06.24
-                </h6> -->
-                <!-- <h6>
-                    Vis Island
-                </h6> -->
-
-            </div>
-        </div>
-        <div class="order_1">
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-
-        <div class=" order_2">
-            <ul class="mb-0 mb-lg-0 d-flex w-100 ls-none align-items-center px-5">
+            <ul class="mb-0 mb-lg-0 d-flex w-100 ls-none align-items-center px-3">
 
                 <li class="nav-item me-4 d-none_max_768">
                     <a class="nav-link dynamic" data-bs-toggle="modal" data-bs-target="#exampleModal" style="cursor: pointer;">Contact</a>
                 </li>
-                <!-- <li class="nav-item">
 
-                    <div class="ticket_button"> <a class="txt_decoration" style="color:white" href="https://www.entrio.hr/en/event/music-breeze-vis-18574"> Tickets </a> </div>
-                </li> -->
+
+
                 <li class="nav-item">
 
                     <div class="wp-block-button button--tertiary programme__schedule-cta position-relative">
                         <button id="submitBtn" type="submit" class="wp-block-button__link" style="background-color: transparent;border: 0;font-weight: 700;">Tickets</button>
                     </div>
                 </li>
-
+                <button class="navbar-toggler ms-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
 
             </ul>
         </div>
-
     </div>
 </nav>
+
 
 
 
@@ -394,32 +364,17 @@
 
 
 
-<!-- <script>
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navNavbar").style.top = "0";
-        } else {
-            document.getElementById("navNavbar").style.top = "-80px";
-        }
-        prevScrollpos = currentScrollPos;
-    }
-</script> -->
+
 
 <style>
-    #navNavbar {
-        /* transition: top 0.5s; */
-    }
-    
     .bg-body-tertiary {
         --bs-bg-opacity: 0;
         background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;
     }
     
     .bg-body-tertiary.scrolled {
-        background-color: rgba(255, 255, 255, .92)!important;
-        transition: top 0.3s;
+        background-color: rgba(255, 255, 255, .96)!important;
+        transition: top .3s ease-in-out;
         /* Change to your desired color */
     }
 </style>
@@ -452,7 +407,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<style>
+<!-- <style>
     .dynamic {
         color: rgba(0, 0, 0, 1)!important
     }
@@ -488,23 +443,4 @@
         --bs-navbar-toggler-focus-width: 0;
         --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
     }
-    /* .scrolled {
-        color: #042531!important;
-    } */
-</style>
-<!-- <script>
-    $(document).ready(function() {
-        $(window).bind('scroll', function() {
-            var navHeight = $('.navbar').height();
-            if ($(window).scrollTop() > navHeight) {
-                $('.dynamic').addClass('scrolled');
-                $('.brand_divider').addClass('brand_divider_dark');
-                $('.navbar').addClass('navbar_d');
-            } else {
-                $('.dynamic').removeClass('scrolled');
-                $('.brand_divider').removeClass('brand_divider_dark');
-                $('.navbar').removeClass('navbar_d');
-            }
-        });
-    });
-</script> -->
+</style> -->
