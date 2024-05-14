@@ -551,6 +551,24 @@
             padding: 0 15px;
         }
         
+        @media (max-width:1450px) {
+            .winter-footer__content {
+                clear: both;
+                margin: 0 auto;
+                max-width: 1240px;
+                padding: 0 15px;
+            }
+        }
+        
+        @media (max-width:992px) {
+            .winter-footer__content {
+                clear: both;
+                margin: 0 auto;
+                max-width: 90%;
+                padding: 0 15px;
+            }
+        }
+        
         @media (max-width:768px) {
             .winter-footer__content {
                 padding: 0 40px;
@@ -690,7 +708,7 @@
             pointer-events: none;
         }
         
-        @media(max-width:768px) {
+        @media(max-width:992px) {
             .first_area h2 {
                 font-size: 2.5rem;
                 text-align: center;
