@@ -708,7 +708,7 @@
             pointer-events: none;
         }
         
-        @media(max-width:768px) {
+        @media(max-width:992px) {
             .first_area h2 {
                 font-size: 2.5rem;
                 text-align: center;
@@ -871,7 +871,7 @@
             border-bottom: none;
         }
         
-        @media (max-width:768px) {
+        @media (max-width:992px) {
             .footer_menu {
                 padding: 24px 40px;
             }
