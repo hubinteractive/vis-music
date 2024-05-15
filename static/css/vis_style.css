@@ -1510,7 +1510,7 @@
             content: "";
             display: block;
             position: absolute;
-            left: 0;
+            left: -2px;
             top: 6px;
             height: 100%;
             z-index: -1;
@@ -1524,7 +1524,7 @@
         .wp-block-button__link::after {
             width: 12px;
             height: 15px;
-            background-image: url(../../static/img/external-link.svg);
+            /* background-image: url(../../static/img/external-link.svg); */
         }
         
         .wp-block-button__link:not([disabled])::after {
@@ -1831,4 +1831,224 @@
         
         .svg_artist_dark {
             fill: #1d2932;
+        }
+        /* #about */
+        
+        .about_content {
+            width: 85%;
+            margin: 0 auto;
+            margin-top: 7rem;
+            margin-bottom: 7rem;
+        }
+        
+        #about_vis h5 {
+            font-size: 1.35rem;
+            line-height: 1.5;
+            font-weight: 400;
+        }
+        
+        #about_vis h4 {
+            font-size: 3.75rem;
+            font-weight: 700;
+            letter-spacing: 0;
+        }
+        
+        .mb-45 {
+            margin-bottom: 5rem;
+        }
+        
+        .ps--5ab {
+            padding-left: 7rem;
+        }
+        
+        @media (max-width:1200px) {
+            #about_vis h4 {
+                font-size: 3rem;
+            }
+        }
+        
+        @media (max-width:992px) {
+            #about_vis h4 {
+                font-size: 2.65rem;
+                text-align: center;
+            }
+            .mb-45 {
+                margin-bottom: 2rem;
+            }
+            #about_vis .mb-5 {
+                margin-bottom: 1.5rem!important;
+            }
+            .ps--5ab {
+                padding-left: 0;
+            }
+        }
+        
+        @media (max-width:768px) {
+            #about_vis h4 {
+                font-size: 2.05rem;
+            }
+        }
+        
+        .vis_banner_mask {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background-size: 100%;
+            /* background-color: rgba(0, 0, 0, .75); */
+            /* background-color: rgba(29, 41, 50, .92); */
+            background-color: rgb(255, 255, 255, .82);
+            z-index: 1;
+        }
+        
+        .vis_banner_vis_wd_ht_light {
+            background-image: url(../../../static/img/vis/vis-5.jpg);
+            background-repeat: no-repeat;
+            width: 100%;
+            height: auto;
+            background-size: cover;
+            background-position: right 35% bottom 20%;
+        }
+        
+        @media (max-width: 992px) {
+            .vis_banner_bg::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-color: #0f91c3;
+                opacity: .52;
+            }
+            #about_vis h5 {
+                font-size: 1.05rem;
+            }
+            .about_content {
+                width: 75%;
+                margin: 0 auto;
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+            }
+        }
+        
+        .vis_banner-caption_light {
+            z-index: 5;
+            white-space: normal;
+            font-size: 5rem;
+            line-height: 1;
+            font-weight: 700;
+            color: rgb(255, 255, 255);
+            letter-spacing: -1px;
+            border-width: 0px;
+            margin: 0px;
+            margin-bottom: 2rem;
+            color: whitesmoke;
+            color: #d8a44f;
+        }
+        
+        .vis_padd_banner_caption_light {
+            padding: 200px 10% 50px 10%;
+        }
+        
+        @media (max-width:1400px) {
+            .vis_banner-caption_light {
+                font-size: 4rem;
+            }
+            .vis_padd_banner_caption_light {
+                padding: 200px 10% 50px 10%;
+            }
+        }
+        
+        @media (max-width:992px) {
+            .vis_padd_banner_caption_light {
+                padding: 22.5% 10% 0 10%;
+            }
+        }
+        
+        @media (max-width:768px) {
+            .vis_padd_banner_caption_light {
+                padding: 35.5% 5% 0 5%;
+            }
+            .vis_banner-caption_light {
+                font-size: 3rem;
+            }
+        }
+        
+        @media (max-width:992px) {
+            .vis_padd_banner_caption_light {
+                padding: 180px 5% 50px 5%;
+            }
+        }
+        
+        @media (max-width:768px) {
+            .vis_padd_banner_caption_light {
+                padding: 200px 5% 50px 5%;
+            }
+        }
+        
+        @media (max-width:576px) {
+            .vis_padd_banner_caption_light {
+                padding: 150px 5% 30px 5%;
+            }
+            .vis_banner-caption_light {
+                font-size: 4rem;
+                text-align: center;
+            }
+            .about_content {
+                width: 90%;
+                margin: 0 auto;
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+            }
+        }
+        
+        .y_divider {
+            background-color: #4a677c;
+            width: 1px;
+            margin: 0 40px 0 10px;
+            height: 150px;
+        }
+        
+        .vis_bran_logo_container {
+            left: 5%;
+            bottom: -10%;
+            width: 50%;
+            height: 200px;
+            background-color: #e2b365;
+        }
+        
+        .vis_brand_logo_tzv {
+            width: auto;
+            height: 125px;
+        }
+        
+        .vis_brand_logo_3gonga {
+            font-size: 2.5rem
+        }
+        
+        @media (max-width:768px) {
+            .vis_brand_logo_tzv {
+                width: auto;
+                height: 65px;
+            }
+            .vis_brand_logo_3gonga {
+                font-size: 1.2rem;
+                margin-top: 1rem;
+            }
+            .vis_bran_logo_container {
+                left: 5%;
+                bottom: -11.5%;
+                width: 90%;
+                height: 100px;
+                background-color: #e2b365;
+            }
+            .y_divider {
+                width: 1px;
+                margin: 0 20px 0 10px;
+                height: 75px;
+            }
         }

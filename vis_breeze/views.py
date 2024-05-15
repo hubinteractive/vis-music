@@ -3,6 +3,9 @@ from .forms import MyForm, ContactForm
 from django.http import HttpResponse
 from django.core.mail import EmailMessage
 from django.conf import settings
+from django.http import FileResponse
+
+import os
 
 # Create your views here.
 def index(request):
@@ -110,10 +113,18 @@ def subscribe(request):
 
 
 def pdf(request):
-    context = {
 
-    }
-    return render(request, 'programme_vis_2024.pdf',  context)
+    file = os.path.join(settings.BASE_DIR, 'static/programme_vis_2024.webp')
+
+    fileOpened = (open, 'rb')
+
+    return FileResponse(fileOpened)
+
+
+    # context = {
+
+    # }
+    # return render(request, 'programme_vis_2024.pdf',  context)
 
 
 
