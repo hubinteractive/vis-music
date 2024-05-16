@@ -1796,6 +1796,7 @@
             border: var(--bs-border-width) solid var(--bs-border-color);
             border-radius: 0;
             transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+            height: 70px;
         }
         
         .input-text__label {
@@ -1857,6 +1858,11 @@
             margin-bottom: 5rem;
         }
         
+        .my-45 {
+            margin-bottom: 5rem;
+            margin-top: 5rem;
+        }
+        
         .ps--5ab {
             padding-left: 7rem;
         }
@@ -1874,6 +1880,10 @@
             }
             .mb-45 {
                 margin-bottom: 2rem;
+            }
+            .my-45 {
+                margin-bottom: 2rem;
+                margin-top: 2rem;
             }
             #about_vis .mb-5 {
                 margin-bottom: 1.5rem!important;
@@ -2052,3 +2062,14 @@
                 height: 75px;
             }
         }
+        
+        .gray-style {
+            filter: grayscale(0.90);
+            transition: top .3s ease-in-out;
+        }
+        
+        .gray-style:hover {
+            filter: grayscale(0);
+            transition: top .3s ease-in-out;
+        }
+        /* #image hover */
