@@ -1782,7 +1782,7 @@
         
         #contact_vis .form-control {
             display: block;
-            width: 75%;
+            width: 100%;
             padding: 2.5rem .75rem .5rem .75rem;
             font-size: .875rem;
             font-weight: 400;
