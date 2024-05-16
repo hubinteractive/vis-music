@@ -1,4 +1,4 @@
-{% extends "core/base.html" %} {% block title %} Home | {% endblock title %} {% load static %} {% block content %}
+{% extends "core/base.html" %} {% block title %} Contact | {% endblock title %} {% load static %} {% block content %}
 
 <section id="contact_vis">
 
@@ -317,7 +317,7 @@
                         </div>
 
                         <!-- area 2 -->
-                        <div class="col-md-6 d-flex justify-content-center mt-md-5 bg_cont">
+                        <div class="col-md-6 d-flex justify-content-center mt-md-5">
                             <!-- <div class="text-center">
                                 <form action="/contact/" method="post">
                                     {% csrf_token %} {% for field in form %}
@@ -335,9 +335,28 @@
                                     <h5 class="fc-dark_black">Lokacija, Prirovo polutotok, Vis </h5>
                                     <p class="fc-dark_black">Šetalište Apolonija Zanelle 24-6, Vis </p>
                                 </div>
-                                <div>
+                                <div class="mb-5">
                                     <h3>Organizer's contact</h3>
                                 </div>
+                                <div class="google-map">
+                                    <style>
+                                        .google-map {
+                                            padding-bottom: 50%;
+                                            position: relative;
+                                        }
+                                        
+                                        .google-map iframe {
+                                            height: 100%;
+                                            width: 100%;
+                                            left: 0;
+                                            top: 0;
+                                            position: absolute;
+                                        }
+                                    </style>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.942080156324!2d16.183122943928318!3d43.063685705577086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133597ba0fdfb33d%3A0x8effa366a45d51b2!2sChurch%20of%20St.%20Jerome!5e0!3m2!1sen!2smk!4v1715862780829!5m2!1sen!2smk"
+                                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+
                             </div>
 
 
